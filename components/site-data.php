@@ -29,4 +29,24 @@
     )
   ;
   $site_footer_text= "Arvestustöö: Marge Mölder - 30.09.2014";
+
+
+  
+  function team_member($name='Nimetu',$email='Puudub',$hobbies='Puuduvad') {
+    $html_output = '<div class="team-member">';
+    $html_output .= '<h2 class="member-name">'.$name.'</h2>';
+    $html_output .= '<div class="member-info"><span>E-mail: </span>';
+    if($email!=='Puudub'){
+      $html_output .='<a href="mailto:'.$email.'">'.$email.'</a>';
+    }else {
+      $html_output .='<span>'.$email.'</span>';
+    }
+    $html_output .= '</div>';
+    $html_output .= '<div class="member-info"><span>Huvialad: </span>'.$hobbies.'</div>';
+    $html_output .= '</div>';
+
+    return $html_output;
+  }
+
+
 ?>
