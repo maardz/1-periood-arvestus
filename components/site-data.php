@@ -28,4 +28,5 @@
       )
     )
   ;
+  $site_footer_text= "Arvestustöö: Marge Mölder - 30.09.2014";
 ?>
